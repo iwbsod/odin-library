@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-button-bg-color: #E65910;
+  --library-text-color: #1A1715;
+  --librart-bg-color: #E6E2DF;
+  --library-div-bg-color: #2E231C;
+  --subtext-color: #AFAFAF;
+}
+
+html, body {
+  height: 100%;
+}

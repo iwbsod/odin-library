@@ -1,0 +1,53 @@
+.header {
+  background-color: var(--header-button-bg-color);
+  display: grid;
+  grid-template-columns: 5fr 1fr 5fr;
+  padding: 15px;
+  color: white;
+  gap: 80px;
+  position: fixed;
+}
+
+.header img {
+  height: 40px;
+  filter: invert(100%);
+}
+
+.header .left,
+.header .right {
+  display: flex;
+  align-items: end;
+  gap: 90px;
+  padding-bottom: 3px;
+}
+
+.header .left {
+  justify-content: flex-end;
+}
+
+.link {
+  font-family: 'Open Sans';
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.header .middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.middle span {
+  font-family: 'Quicksand';
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.header .right {
+  justify-content: flex-start;
+}
