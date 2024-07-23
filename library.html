@@ -4,8 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Library</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/shared/general.css">
+  <link rel="stylesheet" href="styles/pages/library.css">
+  <link rel="stylesheet" href="styles/shared/header.css">
 </head>
 <body>
-  
+  <div class="header">
+    <div class="left">
+      <span class="link">Favorites</span>
+      <span class="link">Home</span>
+    </div>
+
+    <div class="middle">
+      <img src="assets/library.svg" alt="">
+      <span>Librio</span>
+    </div>
+
+    <div class="right">
+      <span class="link">About Us</span>
+      <span class="link">Help</span>
+    </div>
+  </div>
+
+  <div class="empty">
+    <div class="left">
+      <div class="title">
+        <span>Oops!  Your Library is Empty!</span>
+      </div>
+
+      <div class="description">
+        <span>You have no books in your library right now. Why not add a book to get <br> started?</span>
+        <div>
+          <button class="js-add-book-button">Add Book</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="right">
+      <img src="assets/book.png" alt="">
+      <img class="question-mark" src="assets/question.png" alt="">
+    </div>
+  </div>
+  </div>
 </body>
 </html>

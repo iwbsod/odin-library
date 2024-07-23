@@ -1,0 +1,57 @@
+body {
+  background-color: var(--library-bg-color);
+  color: var(--library-div-bg-color);
+}
+
+.empty {
+  padding: 70px 70px;
+  display: grid;
+  grid-template-columns: 700px 550px;
+}
+
+.empty .left {
+  padding-top: 50px;
+}
+
+.left .title {
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+.title span {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.left .description {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.description span {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.description button {
+  color: white;
+}
+
+.empty .right {
+  position: relative;
+}
+
+.right img {
+  height: 500px;
+}
+
+.right .question-mark {
+  transform: rotate(10deg);
+  height: 100px;
+  position: absolute;
+  z-index: 999;
+  bottom: 110px;
+  left: 0;
+  filter: invert(15%) sepia(100%) saturate(150%) hue-rotate(10deg);
+}
