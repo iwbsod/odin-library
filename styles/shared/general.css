@@ -21,9 +21,13 @@ button {
   background-color: var(--header-button-bg-color);
   border: none;
   font-family: 'Open Sans';
+  cursor: pointer;
+  font-weight: 600;
+
+}
+
+.page-button {
   padding: 10px 30px;
   border-radius: 20px;
-  font-weight: 600;
   font-size: 17px;
-  cursor: pointer;
 }

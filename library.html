@@ -44,7 +44,7 @@
       <div class="description">
         <span>You have no books in your library right now. Why not add a book to get <br> started?</span>
         <div>
-          <button class="js-add-book-button">Add Book</button>
+          <button class="js-add-book-button page-button">Add Book</button>
         </div>
       </div>
     </div>
@@ -54,6 +54,47 @@
       <img class="question-mark" src="assets/question.png" alt="">
     </div>
   </div>
+  
+  
+  <div class="modal js-modal">
+    <div class="top">
+      <img src="assets/close.svg" alt="">
+    </div>
+
+    <div class="modal-title">
+      <span>My Book</span>
+    </div>
+
+    <div class="form-container">
+      <form class="form">
+        <div>
+          <label for="js-book-title">Title:</label>
+          <input id="js-book-title" type="text">
+        </div>  
+
+        <div>
+          <label for="js-book-author">Author:</label>
+          <input id="js-book-author" type="text">
+        </div>
+        
+        <div>
+          <label for="js-book-year">Year of publication:</label>
+          <input id="js-book-year" type="text">
+        </div>
+
+        <div>
+          <label for="rating-select">Rating:</label>
+
+          <input id="js-book-rating" type="range" step="0.5" min="0" max="5" value="0" oninput="rangeValue.innerText = `${this.value} stars`">
+
+          <p class="rating" id="rangeValue">0 stars</p>
+        </div>
+
+        <button type="submit" class="js-submit-button">Submit</button>
+      </form>  
+    </div>
   </div>
+
+  <script src="scripts/library.js"></script>
 </body>
 </html>
