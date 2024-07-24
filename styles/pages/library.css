@@ -9,6 +9,9 @@ body {
   display: grid;
   grid-template-columns: 700px 550px;
   color: var(--library-div-bg-color);
+}
+
+.blur {
   filter: blur(5px);
 }
 
@@ -69,6 +72,7 @@ body {
   padding: 20px 30px 30px 30px;
   z-index: 999;
   border-radius: 10px;
+  display: none;
 }
 
 .top {
@@ -78,6 +82,7 @@ body {
 .top img {
   height: 30px;
   filter: invert(100%);
+  cursor: pointer;
 }
 
 .modal-title {
