@@ -44,7 +44,7 @@
       <div class="description">
         <span>You have no books in your library right now. Why not add a book to get <br> started?</span>
         <div>
-          <button class="js-add-book-button page-button">Add Book</button>
+          <button class="js-empty-add-button page-button">Add Book</button>
         </div>
       </div>
     </div>
@@ -55,13 +55,13 @@
     </div>
   </div>
   
-  <div class="library">
+  <div class="library js-library">
     <div class="library-title-container">
       <span>My Library</span>
     </div>
 
-    <div class="library-grid js-library">
-      <div class="book">
+    <div class="library-grid js-library-grid">
+      <!-- <div class="book">
         <div class="text-details">
           <div class="book-title-container">
             <span class="book-title js-book-title">The 7 Husbands of Evelyn Hugo</span>
@@ -128,17 +128,17 @@
             </p>
           </div>  
         </div>
-        
+
         <div class="book-rating-container">
           <img src="assets/ratings/rating-50.png" alt="">
           <span class="book-rating js-book-rating">(5.0)</span>
         </div>
-      </div>
+      </div> -->
 
     </div>
 
     <div class="button-container">
-      <button class="js-add-book-button page-button">Add Book</button>
+      <button class="js-library-add-button page-button">Add Book</button>
     </div>
   </div>
   
@@ -171,7 +171,7 @@
         <div>
           <label for="rating-select">Rating:</label>
 
-          <input id="js-book-rating" type="range" step="0.5" min="0" max="5" value="0" oninput="rangeValue.innerText = `${this.value} stars`">
+          <input id="js-book-rating" type="range" step="0.5" min="0" max="5" value="5" oninput="rangeValue.innerText = `${this.value} stars`">
 
           <p class="rating" id="rangeValue">0 stars</p>
         </div>

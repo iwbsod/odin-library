@@ -6,10 +6,9 @@ body {
 
 .empty {
   padding: 70px 70px;
-  display: grid;
+  display: none;
   grid-template-columns: 700px 550px;
   color: var(--library-div-bg-color);
-  display: none;
 }
 
 .blur {
@@ -137,6 +136,7 @@ body {
 
 .library {
   padding: 100px 40px 40px 40px;
+  display: none;
 }
 
 .library .library-title-container {
