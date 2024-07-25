@@ -104,22 +104,22 @@ body {
   gap: 15px;
 }
 
-.form div {
+.form .form-input-container {
   display: flex;
   flex-direction: column;
+}
+
+.form-input-container .text-input {
+  padding: 10px 20px;
+  width: 300px;
+  border-radius: 20px;
+  border: none;
 }
 
 .form label {
   margin-bottom: 5px;
   margin-left: 10px;
   font-size: 15px;
-}
-
-.form input {
-  padding: 10px 20px;
-  width: 300px;
-  border-radius: 20px;
-  border: none;
 }
 
 .form button {
@@ -129,7 +129,38 @@ body {
   background-color: var(--header-button-bg-color);
   color: white;
   font-size: 15px;
-  margin-top: 10px;
+  margin-top: 5px;
+}
+
+.range-input-container {
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  gap: 15px;
+}
+
+.range-input-container .range-slider {
+  -webkit-appearance: none;
+  width: 200px;
+  height: 8px;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+ input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background: var(--header-button-bg-color);
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+ }
+
+.range-input-container p {
+  font-weight: 700;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
 }
 
 /* LIBRARY STYLES */
