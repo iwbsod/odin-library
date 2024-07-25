@@ -26,11 +26,17 @@
   justify-content: flex-end;
 }
 
+.left a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .link {
   font-family: 'Open Sans';
   font-weight: 500;
   cursor: pointer;
 }
+
 
 .link:hover {
   text-decoration: underline;
